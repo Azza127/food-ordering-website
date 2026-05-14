@@ -1806,9 +1806,9 @@ margin-top: -3.8px;
 
 @media (max-width: 420px) {
   .delivery-info1 {
-    width: 98%;
+    width: 85%;
     max-width: 260px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .delivery-info1 i {
