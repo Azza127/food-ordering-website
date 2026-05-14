@@ -16,6 +16,7 @@ html,
 body {
   overflow-x: hidden;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Hero Section Layout */
@@ -216,16 +217,28 @@ input.success {
   font-weight: 700;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .cta-button:hover {
   transform: scale(1.05);
+}
+
+.cta-button i {
+  color: #f4c542;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+  transform: translateX(4px) rotate(-10deg);
 }
 
 .food-image-container {
@@ -752,22 +765,18 @@ margin-top: -3.8px;
   width: 100%;
 }
 
-.delivery-btn {
+.delivery-info1 {
   background: transparent;
   border: 1.5px solid #DD9E59;
   color: #DD9E59;
   padding: 12px 25px;
   border-radius: 30px;
   font-family: 'Cairo', sans-serif;
-  cursor: pointer;
-  display: flex;
+  /* cursor: pointer; */
+  cursor: default;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-}
-
-.delivery-btn:hover {
-  background-color: #DD9E59;
-  color: #6B3E36;
 }
 
 .delivery-img {
@@ -1171,6 +1180,10 @@ margin-top: -3.8px;
     width: 220px;
   }
 
+  .cta-button i {
+    font-size: 0.9rem;
+  }
+
   .food-img {
     max-width: 280px;
   }
@@ -1320,7 +1333,7 @@ margin-top: -3.8px;
   width: 100%;
 }
 
-.delivery-btn {
+.delivery-info1 {
   margin: 0 auto;
   justify-content: center;
   text-align: center;
@@ -1540,6 +1553,11 @@ margin-top: -3.8px;
     width: 200px;
     font-size: 0.9rem;
     padding: 12px 20px;
+    gap: 8px;
+  }
+
+  .cta-button i {
+    font-size: 0.85rem;
   }
 
   .food-img {
@@ -1717,7 +1735,7 @@ margin-top: -3.8px;
     max-width: 300px;
   }
 
-  .delivery-btn {
+  .delivery-info1 {
     padding: 9px 16px;
     font-size: 0.8rem;
     gap: 6px;
@@ -1726,7 +1744,7 @@ margin-top: -3.8px;
     justify-content: center;
   }
 
-  .delivery-btn i {
+  .delivery-info1 i {
     font-size: 0.85rem;
   }
 
@@ -1786,7 +1804,7 @@ margin-top: -3.8px;
 
 @media (max-width: 420px) {
 
-  .delivery-btn {
+  .delivery-info {
     width: 90%;
     max-width: 260px;
   }
