@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <title>مطعم أبو النور</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="top-nav">
+            <div class="cart-icon" onclick="openCart()">
+                <i class="fa-solid fa-cart-arrow-down" style="color: #F2EAE0"></i>
+                <span class="cart-count">0</span>
+            </div>
+
+            <div class="social-icons">
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="content-wrapper">
+                <img src="media/logo.png" alt="Logo" class="logo">
+                
+                <h1 class="main-heading">أصل التحبيشة <span>المصرية</span></h1>
+                
+                <p class="sub-text">
+                    من قلب القدرة لقلب الرغيف، ساندوتشات فول وطعمية وميكسات تظبط مودك طول اليوم. سخنة، طازة، ومستنياك.
+                </p>
+
+                <button class="cta-button">
+                    يلا نتحبش!
+                </button>
+
+                <div class="food-image-container">
+                    <img src="media/طعمية.png" alt="طبق طعمية" class="food-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-info">
+            <div class="delivery-info">
+                <i class="far fa-clock"></i> توصيل سريع في 30 دقيقة 
+            </div>
+
+            <div class="call-us">
+                <strong>010-701-22075</strong>
+                <strong>:Call Us</strong>
+            </div>
+        </div>
+    </section>
+
+        <div class="section-spacer"></div>
+
+        <section class="features-intro">
+            <div class="container">
+                <div class="features-grid">
+                    <!-- الميزة الأولى -->
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>خضار طازة</h3>
+                        <p>بننقي الخضرة والطلبات يوم بيوم عشان الطعم يفضل فريش.</p>
+                    </div>
+        
+                    <!-- الميزة الثانية -->
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>زيت نضيف</h3>
+                        <p>أهم حاجة عندنا صحتك، بنستخدم أنضف أنواع الزيوت وبنغيرها باستمرار.</p>
+                    </div>
+        
+                    <!-- الميزة الثالثة -->
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>نَفَس مصري</h3>
+                        <p>السر مش بس في الوصفة، السر في النَفَس واللمة اللي بتفتح النفس.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <div class="container">
+                <!-- العنوان -->
+                <h2 class="menu-main-title">ساندوتشك <span>على مزاجك</span></h2>
+                <p class="menu-subtitle">تحبيشة لكل الأوقات.. من الصبح لآخر الليل</p>
+        
+                <!-- Tabs -->
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="sandwich">🥪 ساندوتشات</button>
+                    <button class="tab-btn" data-category="mix">🍽 ميكسات</button>
+                    <button class="tab-btn" data-category="extras">🍟 إضافات</button>
+                  </div>
+        
+                <!-- شبكة الأصناف -->
+                  <div class="menu-category active" id="sandwich">
+                    <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>طعمية</h3>
+                              <span class="price">12 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/طعمية.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>فول</h3>
+                              <span class="price">12 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/فول.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+      
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>حمص</h3>
+                              <span class="price">15 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/حمص.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>بابا غنوج</h3>
+                              <span class="price">17 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/بابا غنوج.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>باذنجان</h3>
+                              <span class="price">13 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/باذنجان.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>مسقعة</h3>
+                              <span class="price">20 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/مسقعة.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+      
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>بيض</h3>
+                              <span class="price">12 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> شطة</label>
+                              <label><input type="checkbox"> طحينة</label>
+                              <label><input type="checkbox"> سلطة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/بيض.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>بطاطس</h3>
+                              <span class="price">20 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> كاتشب</label>
+                              <label><input type="checkbox"> طحينة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/بطاطس.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>بطاطس رومي</h3>
+                              <span class="price">30 ج.م</span>
+                          </div>
+                          <!-- خيارات التخصيص -->
+                          <div class="item-options">
+                              <label><input type="checkbox"> سادة</label>
+                              <label><input type="checkbox"> كاتشب</label>
+                              <label><input type="checkbox"> طحينة</label>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/بطاطس.png" class="food-layer"> 
+                          <img src="media/رومي.png" class="food-layer1">
+                      </div>
+                  </div>
+      
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>جبنة شامي بالزعتر</h3>
+                              <span class="price">15 ج.م</span>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/جبنة شامي.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+
+                  <div class="menu-card">
+                      <div class="item-details">
+                          <div class="item-header">
+                              <div class="quantity-box">
+                                  <button class="add-to-cart-btn">
+                                      <i class="fas fa-plus"></i>
+                                  </button>
+                                
+                                  <div class="counter">
+                                    <button class="minus"><strong>ــ</strong></button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                  </div>
+                                </div>
+                              <h3>حلاوة قشطة</h3>
+                              <span class="price">20 ج.م</span>
+                          </div>
+                      </div>
+
+                      <div class="item-visual">
+                          <img src="media/wood-board.png" class="board-layer">
+                          <img src="media/حلاوة.png" class="food-layer"> <!-- بدل item-img -->
+                      </div>
+                  </div>
+            <button class="view-more" data-target="sandwich" type="button">رؤية المزيد ←</button>
+          </div>
+  <!-- </div> -->
+<!-- //////////////////// -->
+<div class="menu-category" id="mix">
+  <div class="menu-card" data-id="mix1">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+        <h3>طعمية</h3>
+      </div>
+
+      <div class="mix-options">
+        <label><input type="checkbox"> فول <span>15 ج.م</span></label>
+        <label><input type="checkbox"> حمص <span>18 ج.م</span></label>
+        <label><input type="checkbox"> باذنجان <span>15 ج.م</span></label>
+        <label><input type="checkbox"> بطاطس <span>23 ج.م</span></label>
+        <label><input type="checkbox"> بيض <span>18 ج.م</span></label>
+        <label><input type="checkbox"> بابا غنوج <span>18 ج.م</span></label>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/طعمية.png" class="food-layer">
+    </div>
+  </div>
+
+  <!-- card 2 -->
+  <div class="menu-card" data-id="mix2">
+      <div class="item-details">
+        <div class="item-header">
+          <div class="quantity-box">
+            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+            <div class="counter">
+              <button class="minus"><strong>ــ</strong></button>
+              <span class="count">1</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <h3>فول</h3>
+        </div>
+  
+        <div class="mix-options">
+          <label><input type="checkbox"> بيض <span>15 ج.م</span></label>
+          <label><input type="checkbox"> حمص <span>23 ج.م</span></label>
+          <label><input type="checkbox"> باذنجان <span>18 ج.م</span></label>
+          <label><input type="checkbox"> بابا غنوج <span>18 ج.م</span></label>
+        </div>
+      </div>
+  
+      <div class="item-visual">
+        <img src="media/wood-board.png" class="board-layer">
+        <img src="media/فول.png" class="food-layer">
+      </div>
+  </div>
+
+      <!-- /////////////////// -->
+        <!-- card 3 -->
+      <div class="menu-card" data-id="mix3">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="quantity-box">
+                <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                <div class="counter">
+                  <button class="minus"><strong>ــ</strong></button>
+                  <span class="count">1</span>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <h3>بطاطس</h3>
+            </div>
+      
+            <div class="mix-options">
+              <label><input type="checkbox"> حمص<span>15 ج.م</span></label>
+              <label><input type="checkbox"> فول <span>18 ج.م</span></label>
+              <label><input type="checkbox"> باذنجان <span>15 ج.م</span></label>
+              <label><input type="checkbox"> بيض <span>23 ج.م</span></label>
+              <label><input type="checkbox"> بابا غنوج <span>18 ج.م</span></label>
+              <label><input type="checkbox"> باذنجان حمص<span>15 ج.م</span></label>
+            </div>
+          </div>
+      
+          <div class="item-visual">
+            <img src="media/wood-board.png" class="board-layer">
+            <img src="media/بطاطس.png" class="food-layer">
+          </div>
+      </div>
+
+      <!-- /////////////////// -->
+        <!-- card 4 -->
+      <div class="menu-card" data-id="mix4">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="quantity-box">
+                <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                <div class="counter">
+                  <button class="minus"><strong>ــ</strong></button>
+                  <span class="count">1</span>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <h3>بطاطس رومي</h3>
+            </div>
+      
+            <div class="mix-options">
+              <label><input type="checkbox"> فول <span>18 ج.م</span></label>
+              <label><input type="checkbox"> حمص <span>15 ج.م</span></label>
+              <label><input type="checkbox"> باذنجان <span>15 ج.م</span></label>
+              <label><input type="checkbox"> طعمية <span>23 ج.م</span></label>
+            </div>
+          </div>
+      
+          <div class="item-visual">
+            <img src="media/wood-board.png" class="board-layer">
+            <img src="media/بطاطس.png" class="food-layer">
+            <img src="media/رومي.png" class="food-layer1">
+          </div>
+      </div>
+
+            <!-- /////////////////// -->
+        <!-- card 5 -->
+        <div class="menu-card" data-id="mix5">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="quantity-box">
+                <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                <div class="counter">
+                  <button class="minus"><strong>ــ</strong></button>
+                  <span class="count">1</span>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <h3>باذنجان</h3>
+            </div>
+      
+            <div class="mix-options">
+              <label><input type="checkbox"> حمص<span>15 ج.م</span></label>
+              <label><input type="checkbox"> بابا غنوج <span>18 ج.م</span></label>
+              <label><input type="checkbox"> بيض <span>23 ج.م</span></label>
+              <label><input type="checkbox"> طعمية بطاطس<span>18 ج.م</span></label>
+            </div>
+          </div>
+      
+          <div class="item-visual">
+            <img src="media/wood-board.png" class="board-layer">
+            <img src="media/باذنجان.png" class="food-layer">
+          </div>
+      </div>
+
+              <!-- /////////////////// -->
+        <!-- card 6 -->
+        <div class="menu-card" data-id="mix6">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="quantity-box">
+                <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                <div class="counter">
+                  <button class="minus"><strong>ــ</strong></button>
+                  <span class="count">1</span>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <h3>ديناميت</h3>
+            </div>
+      
+            <div class="mix-options">
+              <label><input type="checkbox"> سادة<span>15 ج.م</span></label>
+              <label><input type="checkbox"> بدون فول <span>18 ج.م</span></label>
+              <label><input type="checkbox"> بدون باذنجان <span>15 ج.م</span></label>
+              <label><input type="checkbox"> بدون طعمية <span>23 ج.م</span></label>
+              <label><input type="checkbox"> بدون حمص <span>18 ج.م</span></label>
+              <label><input type="checkbox">  بيض <span>18 ج.م</span></label>
+            </div>
+          </div>
+      
+          <div class="item-visual">
+            <img src="media/wood-board.png" class="board-layer">
+            <img src="media/ديناميت.png" class="food-layer">
+          </div>
+      </div>
+
+              <!-- /////////////////// -->
+        <!-- card 7 -->
+        <div class="menu-card" data-id="mix7">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="quantity-box">
+                <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                <div class="counter">
+                  <button class="minus"><strong>ــ</strong></button>
+                  <span class="count">1</span>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <h3>بيض + حمص</h3>
+              <span class="price">13 ج.م</span>
+            </div>
+      
+          </div>
+      
+          <div class="item-visual">
+            <img src="media/wood-board.png" class="board-layer">
+            <img src="media/حمص.png" class="food-layer">
+            <img src="media/بيضة.png" class="food-layer1">
+          </div>
+      </div>
+
+              <!-- /////////////////// -->
+        <!-- card 8 -->
+        <div class="menu-card" data-id="mix8">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="quantity-box">
+                <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                <div class="counter">
+                  <button class="minus"><strong>ــ</strong></button>
+                  <span class="count">1</span>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+              <h3>ساندوتش أبو النور ( المعلم )</h3>
+              <span class="price">25 ج.م</span>
+            </div>
+          </div>
+      
+          <div class="item-visual">
+            <img src="media/wood-board.png" class="board-layer">
+            <img src="media/ساندوتش ابو النور.png" class="food-layer">
+          </div>
+      </div>
+
+  <button class="view-more" data-target="mix" type="button">رؤية المزيد ←</button>
+</div>           
+<!-- ///////////////////////// -->
+<div class="menu-category" id="extras">
+  <div class="menu-card" data-id="extra1">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <h3>رومي</h3>
+        <span class="price">15 ج.م</span>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/رومي.png" class="food-layer">
+    </div>
+  </div>
+
+  <div class="menu-card" data-id="extra2">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <h3>بيض</h3>
+        <span class="price">7 ج.م</span>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/بيض.png" class="food-layer">
+    </div>
+  </div>
+
+  <div class="menu-card" data-id="extra3">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <h3>طحينة</h3>
+        <span class="price">1 ج.م</span>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/طحينة.png" class="food-layer">
+    </div>
+  </div>
+
+  <div class="menu-card" data-id="extra4">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <h3>كاتشب</h3>
+        <span class="price">1 ج.م</span>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/كاتشب.png" class="food-layer">
+    </div>
+  </div>
+
+  <div class="menu-card" data-id="extra5">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <h3>مايونيز</h3>
+        <span class="price">2 ج.م</span>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/مايونيز.png" class="food-layer">
+    </div>
+  </div>
+
+  <div class="menu-card" data-id="extra6">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="quantity-box">
+          <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+
+          <div class="counter">
+            <button class="minus"><strong>ــ</strong></button>
+            <span class="count">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <h3>مخلل</h3>
+        <span class="price">10 ج.م</span>
+      </div>
+    </div>
+
+    <div class="item-visual">
+      <img src="media/wood-board.png" class="board-layer">
+      <img src="media/مخلل.png" class="food-layer">
+    </div>
+  </div>
+
+  <button class="view-more" data-target="extras" type="button">رؤية المزيد ←</button>
+</div>
+
+</section>
+
+        <div class="section-spacer"></div>
+
+        <!-- سيكشن الدليفري -->
+        <section class="delivery-section">
+            <div class="delivery-container">
+          
+              <div class="delivery-content">
+                <h2>نوصلك فين <span>في العريش!</span></h2>
+          
+                <p>
+                  مشاويرنا مش بس أكل… دي تجربة! من أول أوردر لحد ما يوصلك ساخن
+                  وطازة في أسرع وقت، وبنغطي جميع مناطق العريش.
+                </p>
+          
+                <button class="delivery-btn">
+                  <i class="fas fa-motorcycle"></i>
+                  متوسط وقت التوصيل: 25-35 دقيقة
+                </button>
+              </div>
+
+
+                <!-- الصورة -->
+              <div class="delivery-img">
+                  <img src="media/سائق دليفري.png" alt="delivery">
+              </div>
+          
+            </div>
+          </section>
+
+          <div class="section-spacer"></div>
+        <div class="section-spacer"></div>
+
+          <!-- الفوتر -->
+          <footer class="main-footer">
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <img src="media/logo.png" alt="أبو النور" class="footer-logo">
+                    <p class="brand-slogan">مكملين معاكم.. بأحلى تحبيشة.</p>
+                </div>
+        
+                <div class="footer-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>العريش - كرم أبونجيلة - أمام الشئون الاجتماعية</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>يومياً من 6:00 ص حتى 2:00 ص</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:01070122075">01070122075</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; ٢٠٢٦ جميع الحقوق محفوظة.</p>
+            </div>
+        </footer>
+
+<!-- السلة  -->
+        <div class="cart-sidebar" id="cartSidebar">
+
+            <div class="cart-header">
+              <h3>السلة</h3>
+              <span class="close-cart" onclick="closeCart()">×</span>
+            </div>
+          
+            <div class="cart-items" id="cartItems">
+              <!-- الأوردرات هتظهر هنا -->
+            </div>
+          
+            <div class="cart-footer">
+              <p>المجموع: <span id="totalPrice">0</span> ج.م</p>
+              <button class="confirm-btn">تأكيد الطلب</button>
+            </div>
+          
+          </div>
+    <script src="script.js"></script>
+</body>
+</html>
